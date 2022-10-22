@@ -1,0 +1,100 @@
+---
+
+---
+
+<body id="bg-img">
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo"><a href="#">LOGO</a></div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fa fa-times"></i>
+          </div>
+          
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/skills">Skills</a></li>
+          <li><a href="/contacts">Contact</a></li>  
+          <li><a href="/resume">Resume</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </body>
+          <li><a href="#">Resume</a></li>
+            
+          
+
+  <style>
+
+    .content {
+  max-width: 1290px;
+  margin: auto;
+  padding: 0px 30px;
+}
+
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+  background: rgb(10, 10, 10);
+}
+
+.navbar.sticky {
+  padding: 10px 0;
+  background: rgb(10, 10, 10);
+}
+
+.navbar .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* List */
+
+.navbar .menu-list {
+  display: inline-flex;
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.menu-list li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: all 0.3s ease;
+}
+
+.menu-list li a:hover {
+  color: aqua;
+}
+
+/* Icon */
+
+.icon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.icon.cancel-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+
+  </style>
