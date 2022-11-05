@@ -1,0 +1,129 @@
+---
+import Layout from "../layouts/Layout.astro";
+import  htmlImg  from "../img/html.png";
+import  cssImg  from "../img/css.png";
+import  javaScriptImg  from "../img/js.png";
+import  nodeJsImg  from "../img/nodejs.png";
+import  reactImg  from "../img/reactjs.png";
+---
+<Layout title="Skills">
+    <div class="skill-section">
+   
+        <h1 class="skills-heading">Skills</h1>
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <img src={htmlImg} class="skill-img" alt="">
+            
+            <h1 class="skill-name">HTML</h1>
+            <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+        </div>
+
+        <div class="skill-card">
+            <img src={cssImg} class="skill-img" alt="">
+            
+            <h1 class="skill-name">CSS</h1>
+            <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+        </div>
+
+        <div class="skill-card">
+            <img src={javaScriptImg} class="skill-img" alt="">
+            
+            <h1 class="skill-name">JAVASCRIPT</h1>
+            <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+        </div>
+
+        <div class="skill-card">
+            <img src={nodeJsImg} class="skill-img" alt="">
+            
+            <h1 class="skill-name">NODE JS</h1>
+            <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+        </div>
+
+        <div class="skill-card">
+            <img src={reactImg} class="skill-img" alt="">
+            
+            <h1 class="skill-name">REACT JS</h1>
+            <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+        </div>
+        
+    </div>
+</div>
+
+</Layout>
+
+<style>
+
+    .skill-section{
+     width: 100%;
+    min-height: 100vh;
+    padding: 150px 100px 100px;
+    
+}
+
+.skills-heading{
+    font-size: 100px;
+    background: #252525;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #1a1a1a;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 8px transparent;
+}
+
+
+.skills-container{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    color: #fff;
+}
+
+.skill-card{
+    position: relative;
+}
+
+.skill-img{
+    display: block;
+    margin: auto;
+    height: 200px;
+}
+
+.skill-name{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 30px 0 20px;
+}
+
+.skill-info{
+    text-align: center;
+    opacity: 0.5;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.skill-level{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 50%;
+    border: 10px solid;
+}
+ 
+
+
+</style>
+
+
